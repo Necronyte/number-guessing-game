@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5rem;
+    font-size: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.container h1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.number-container p{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.number-container input{
+    position: relative;
+    height: 30px;
+    border-radius: 5px;
+    left: 2rem;
+    bottom: 3.5px;
+}
+
+#send{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(120, 100%, 35%);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#send:hover{
+    background-color: hsl(120, 100%, 40%);
+}
+
+.statistics-container{
+    position: absolute;
+    bottom: 40rem;
+    left: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#clear{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    bottom: 37rem;
+    left: 2rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: hsl(39, 100%, 50%);
+    color: white;
+    cursor: pointer;
+}
+
+#clear:hover{
+    background-color: hsl(39, 100%, 55%);
+}
+
+.container #message{
+    display: none;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: blue;
+}
+
+@media (max-width: 600px){
+
+    *{
+        margin: 2px;
+    }
+    
+    .container{
+        position: relative;
+        top: 10rem;
+    }
+
+    .container h1{
+        font-size: 50px;
+        position: relative;
+        left: 1rem;
+    }
+
+    #clear{
+        position: absolute;
+        top: 6rem;
+    }
+
+    .statistics-container{
+        position: absolute;
+        top: 2rem;
+    }
+
+    .number-container{
+        position: relative;
+        right: 1rem;
+    }
+
+    input{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
